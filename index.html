@@ -30,11 +30,15 @@
             margin-bottom: 20px;
         }
 
-        #invitation-img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+        .image-container {
+            display: flex;
+            justify-content: space-between;
             margin-top: 20px;
+        }
+
+        .invitation-img {
+            max-width: 10%; 
+            border-radius: 10px;
         }
 
         #invitation-footer {
@@ -47,7 +51,10 @@
 <body>
     <div id="invitation-container">
         <h1 id="invitation-header">You're Invited!</h1>
-        <img id="invitation-img" src="Wedding.png" alt="Wedding Invitation" style="max-width: 100%; margin-top: 20px;">
+        <div class="image-container">
+            <img class="invitation-img" src="Front.png" alt="Wedding Invitation" style="max-width: 50%; margin-top: 30px;">
+            <img class="invitation-img" src="Info.png" alt="Second Image" style="max-width: 50%; margin-top: 30px;">
+        </div>
         <p id="invitation-footer">Join us in celebrating the union of Vinod & Nisoba on 16-03-24 at Babylon-Huset.<br> We look forward to your presence on this special day!</p>
     </div>
 </body>
